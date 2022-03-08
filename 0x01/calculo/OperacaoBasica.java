@@ -1,5 +1,9 @@
+import java.nio.charset.Charset;
 
 public class OperacaoBasica {
+	
+    Charset cs=Charset.forName("UTF-8");  
+
 
 	public static double somar(double a, double b) {
 

@@ -1,8 +1,11 @@
+import java.nio.charset.Charset;
 
 public class Program {
 	
 
     public static void main(String[] args) {
+        Charset cs=Charset.forName("UTF-8");  
+
 
         System.out.println("Testando o metodo testar_sqrt");
         boolean teste = OperacaoBasicaTeste.testar_sqrt();
@@ -19,6 +22,11 @@ public class Program {
         System.out.println("Testando o metodo testar_primo_menor_zero");
         teste = OperacaoBasicaTeste.testar_primo_menor_zero();
         System.out.println(teste);
+        
+
+         
     }
 
+    
+    
 }

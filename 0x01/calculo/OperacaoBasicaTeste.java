@@ -1,5 +1,9 @@
+import java.nio.charset.Charset;
 
 public class OperacaoBasicaTeste {
+	
+    Charset cs=Charset.forName("UTF-8");  
+
 
 	public static boolean testar_soma() {
 
