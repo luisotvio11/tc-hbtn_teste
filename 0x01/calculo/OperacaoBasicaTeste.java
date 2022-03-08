@@ -22,26 +22,55 @@ public class OperacaoBasicaTeste {
 
 		return false;
 	}
-	
-	public static boolean testar_multiplicacao () {
-		
+
+	public static boolean testar_multiplicacao() {
+
 		if (OperacaoBasica.multiplicar(5, 3) == 15) {
-			
+
 			return true;
 		}
-		
+
 		return false;
-		
+
 	}
 
-	
-	public static boolean testar_divisao () {
-		
+	public static boolean testar_divisao() {
+
 		if (OperacaoBasica.dividir(9, 3) == 3) {
-			
+
 			return true;
 		}
-		
+
 		return false;
 	}
+
+	public static boolean testar_sqrt() {
+
+		if (OperacaoBasica.sqrt(49) == 7) {
+
+			return true;
+
+		}
+
+		return false;
+
+	}
+
+	public static boolean testar_primo() {
+
+		return OperacaoBasica.numero_primo(7).equals("Numero válido, o numero é primo") ? true : false;
+	}
+
+	public static boolean testar_nao_primo() {
+
+		return OperacaoBasica.numero_primo(4).equals("Numero válido, o numero é primo") ? true : false;
+
+	}
+
+	public static boolean testar_primo_menor_zero() {
+
+		return OperacaoBasica.numero_primo(-2).equals("Número invalido. Numero menor ou igual a 1 não é primo") ? false
+				: true;
+	}
+
 }

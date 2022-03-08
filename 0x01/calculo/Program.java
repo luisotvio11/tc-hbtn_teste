@@ -1,23 +1,24 @@
 
 public class Program {
 	
-	 public static void main(String[] args) {
 
-	        System.out.println("Testando a somar");
-	        boolean teste = OperacaoBasicaTeste.testar_soma();
-	        System.out.println(teste);
+    public static void main(String[] args) {
 
-	        System.out.println("Testando a subtracao");
-	        teste = OperacaoBasicaTeste.testar_subtracao();
-	        System.out.println(teste);
+        System.out.println("Testando o metodo testar_sqrt");
+        boolean teste = OperacaoBasicaTeste.testar_sqrt();
+        System.out.println(teste);
 
-	        System.out.println("Testando a multiplicacao");
-	        teste = OperacaoBasicaTeste.testar_multiplicacao();
-	        System.out.println(teste);
+        System.out.println("Testando o metodo testar_primo");
+        teste = OperacaoBasicaTeste.testar_primo();
+        System.out.println(teste);
 
-	        System.out.println("Testando a divisao");
-	        teste = OperacaoBasicaTeste.testar_divisao();
-	        System.out.println(teste);
-	    }
+        System.out.println("Testando o metodo testar_nao_primo");
+        teste = OperacaoBasicaTeste.testar_nao_primo();
+        System.out.println(teste);
+
+        System.out.println("Testando o metodo testar_primo_menor_zero");
+        teste = OperacaoBasicaTeste.testar_primo_menor_zero();
+        System.out.println(teste);
+    }
 
 }
