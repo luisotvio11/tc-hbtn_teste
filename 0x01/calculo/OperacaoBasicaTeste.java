@@ -62,18 +62,18 @@ public class OperacaoBasicaTeste {
 
 	public static boolean testar_primo() {
 
-		return OperacaoBasica.numero_primo(7).equals("Numero válido, o numero é primo") ? true : false;
+		return OperacaoBasica.numero_primo(7).equals("Numero valido, o numero e primo") ? true : false;
 	}
 
 	public static boolean testar_nao_primo() {
 
-		return OperacaoBasica.numero_primo(4).equals("Numero válido, o numero é primo") ? true : false;
+		return OperacaoBasica.numero_primo(4).equals("Numero valido, mas nao e primo") ? true : false;
 
 	}
 
 	public static boolean testar_primo_menor_zero() {
 
-		return OperacaoBasica.numero_primo(-2).equals("Número invalido. Numero menor ou igual a 1 não é primo") ? false
+		return OperacaoBasica.numero_primo(-2).equals("Numero invalido. Numero menor ou igual a 1 e primo") ? false
 				: true;
 	}
 

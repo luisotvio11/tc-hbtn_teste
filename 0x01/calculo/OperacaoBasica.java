@@ -1,9 +1,8 @@
 import java.nio.charset.Charset;
 
 public class OperacaoBasica {
-	
-    Charset cs=Charset.forName("UTF-8");  
 
+	Charset cs = Charset.forName("UTF-8");
 
 	public static double somar(double a, double b) {
 
@@ -36,26 +35,20 @@ public class OperacaoBasica {
 
 		if (num <= 1) {
 
-			return "Número invalido. Numero menor ou igual a 1 não é primo";
+			return "Numero invalido. Numero menor ou igual a 1 e primo";
 		}
 
 		for (int j = 2; j < num; j++) {
 
 			if (num % j == 0) {
 
-				return "Numero válido, o numero é primo";
+				return "Numero valido, mas nao e primo";
 			}
-			
-		}
-			
-			
-			
-			return "Numero válido, o numero é primo";
 
 		}
-			
-		}
-	
 
-	
+		return "Numero valido, o numero e primo";
 
+	}
+
+}
