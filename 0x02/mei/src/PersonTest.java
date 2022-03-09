@@ -19,7 +19,7 @@ class PersonTest {
 	}
 
 	@Test
-	public void test_calculateYearySalary() {
+	public void test_calculateYearlySalary() {
 		person.setSalary(1200);
 		assertEquals(14000, person.calculateYearlySalary());
 	}
@@ -34,7 +34,7 @@ class PersonTest {
 		assertTrue(person.isMEI());
 	}
 
-	public void person_is_not_MET() {
+	public void person_is_not_MEI() {
 
 		person.setAnotherCompanyOwner(true);
 		person.setPensioner(true);
