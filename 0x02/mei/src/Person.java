@@ -43,7 +43,7 @@ public class Person {
 
 	public boolean isMEI() {
 
-		if (calculateYearlySalary() < 130000 && calculateAge() < 18) {
+		if (calculateYearlySalary() < 130000 && calculateAge() >= 18) {
 
 			return anotherCompanyOwner == false && pensioner == false && publicServer == false;
 		}

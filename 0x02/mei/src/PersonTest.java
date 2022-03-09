@@ -9,7 +9,7 @@ class PersonTest {
 
 	@BeforeEach
 	public void setup() {
-		person = new Person("Paul", "McCarney", 2000, true, true, true);
+		person = new Person("Paul", "McCartney", 2000, true, true, true);
 	}
 
 	@Test
@@ -21,24 +21,20 @@ class PersonTest {
 	@Test
 	public void test_calculateYearlySalary() {
 		person.setSalary(1200);
-		assertEquals(14000, person.calculateYearlySalary());
+        assertEquals(14400f, person.calculateYearlySalary());
 	}
 
 	@Test
 	public void person_is_MEI() {
 
-		person.setAnotherCompanyOwner(false);
 		person.setPensioner(false);
+		person.setAnotherCompanyOwner(false);
 		person.setPublicServer(false);
-
 		assertTrue(person.isMEI());
 	}
 
+	@Test
 	public void person_is_not_MEI() {
-
-		person.setAnotherCompanyOwner(true);
-		person.setPensioner(true);
-		person.setPublicServer(true);
 
 		assertFalse(person.isMEI());
 
